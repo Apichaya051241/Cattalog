@@ -15,33 +15,43 @@ export default function Home() {
   const data = [
     {
       title: 'sku1',
+      description:'Overnight Duffle',
     },
     {
       title: 'sku2',
+      description:'แอมป์คาราโอเกะ BMB DAH-100',
     },
     {
       title: 'sku3',
+      description:'ลำโพงคาราโอเกะ BMB CSE-308',
     },
     {
       title: 'sku4',
+      description:'สายเคเบิล Apogee One Breakout Cable (works with ONE for Mac and ONE for iPad & Mac)',
     },
     {
       title: 'sku5',
+      description:'สายเคเบิล Apogee 1 M Lighting iPad cable for Quartet, Duet IOS and ONE-IOS',
     },
     {
       title: 'sku6',
+      description:'เทสภาษาไทยสายเคเบิล Apogee 1 M Lighting iPad cable for Quartet, Duet IOS and ONE-IOS',
     },
     {
       title: 'sku7',
+      description:'V-Moda Custom Shield Kit (Hawk Green)',
     },
     {
       title: 'sku8',
+      description:'V-Moda Custom Shield Kit Overear (Purple)',
     },
     {
       title: 'sku9',
+      description:'V-Moda Audio Cable (Gray/Black)',
     },
     {
       title: 'sku10',
+      description:'V-Moda Memory Cushions M-100 No-package',
     },
   ];
   
@@ -51,8 +61,8 @@ export default function Home() {
       <Head>
       <Image
       width={1540}
-      height={250}
-      src="https://lh3.googleusercontent.com/EnbcaE6mbett1nIG2vtZr3-8cb00NVYW6jN71MmF73-9fIA5qf4KQL05zu3YL-zEfKd1M_12eMMAxnpJFvrf79vi1hTc4z8yr8_nDuHiVT20Z3Y5E4iraOpNkcmPgwyhtZmCNktEoar8Q8i2aHuPq3oM4Ioehwydo-G3jk4hWyn0y0muCj6oGe0IxGvs-B6ebLY71EfmPwp0IRRCuE36qRwAPlruS1wwQVcLtdoTEqP8lqf67vSwj8Cs--SuKDBcVtiul8hbhXzwipJSTsFvpyQohiT1bwgq2X9_VwofGqbYkGBeOSvPgNRUi6CuuR_4RxRTFX5FGcnPEF2O5prwPRPA5NPZWJKWrrk8NfKVIxg6frOdHmQ8lfG18k9B6KyETEgwe5NP2Yh6eIBGmrFRMkJfh3h-aYOPyWVhDK_nr3GNEjCGJl_rH4X_sOLN0149SiyXN3_Dqu9MpOgOq0Itwf2I87CTwEHWTJMZRQ1_9fHlFOu0CbnfFP8zBz35QubztnaQnHaw7Pd--KqShvtNvFFsH1eJWccmt8GukdNS5P68KJz9BcYbMgRZ3pY8tHVy0-TeEny9ns3DuS3bQFNw_-bZCYR4U4OtOpPSVJAjB7SVS2mvLurSGufhHjcwZe6JQqMQzvNi1W3vY4uXa1COrpUxrdb488CIrWdeYQWftkz-xrokJEaAmbJWDgYl0-Zj0_t8EnbPQX1G0UxSeYCGBWHc=w1640-h547-no?authuser=0"
+      height={230}
+      src="https://lh3.googleusercontent.com/QgBYV1MfqNuBFOO-xzknbdyNLIKdL84l3sNNGqTZcwTRT82-dfLhYmJeC_MpC2A_LCo7-rU2ZG2GNztuoFrH50M0rLrLu3hW6QuA3D17A3Mi2i12H3YcnPix-BOcfKCUB0Kk54xPTCLKRLqfAmMojbbkDP8R3BHhAkWFMPhUqRUUcef2xadm7gZ4mNOpK4TvzXywbgFlfedJqqsKJzorOTzrK6yhI44IQuFm6sxGcnSg1s79MFI8As4wfOwI3V-MHd6dMlSd2wjsB54SMOuJMmh6XKz23ckHeq9saINaCbEl8yn0k3jAQfIV15sAmj-2UpNcBiVC0HLGlXrVHVQDLuUmHFZq4ERQjiKkhiPz14RQshy9ICODErUjbRzXowXj5B5LtL663QIfQ526ZaedUo2VwuCO9lT4kr9wxgDOTY1HkKaBun8jg6gb-oVXlIStpb6-6DPgFoQRmdEDvSBdEnMEZkteSp0XlyVwYqsKfdR6uj8DMU0fQVa45L1apFqOEuZD9QszG7kAV3VvaZgkz3YTMAA-t4VstEAwa6gzZChluntFTRPywwPAf08eTHpae2fPcOexk6f7iEoWeAWgrX5cO00HQfAeI_HKRONL0g-eO6wKolBuI02pL7XjHK2gPNPWGEPOCWpWipFS1r8L1Wr4BUiSnVE7eGEUIUpjcmpIJRDmPOxSiyUFod6efTQo_dbjjlPwfaO8vcjozFOVh7oM=w1640-h547-no?authuser=0"
     />
       </Head>
    
@@ -67,18 +77,20 @@ export default function Home() {
     />
 
 <List
+    size="large" 
     itemLayout="horizontal"
     dataSource={data}
     renderItem={item => (
       <List.Item>
         <List.Item.Meta
+          
           title={<a href="https://ant.design">{item.title}</a>}
-          // description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+          description={item.description}
+          
         />
       </List.Item>
     )}
-  />,
-
+  />
       </Content>     
     </div>
   )
