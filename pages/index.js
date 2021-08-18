@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { Content } from 'antd/lib/layout/layout';
 import SearchComponent from '../component/search';
