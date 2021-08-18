@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   height: 200ch;
+  color: #8c8c8c;
 }
 
 .main {
@@ -34,7 +35,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #8c8c8c;
   text-decoration: none;
 }
 
@@ -82,7 +83,7 @@
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
-  color: inherit;
+  color: #8c8c8c;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
@@ -93,8 +94,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #8c8c8c;
+  border-color: #8c8c8c;
 }
 
 .card h2 {
@@ -111,6 +112,10 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.search{
+  color: #8c8c8c;
 }
 
 @media (max-width: 600px) {

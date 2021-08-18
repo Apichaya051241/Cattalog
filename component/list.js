@@ -59,7 +59,7 @@ const ListComponent = ({  }) => {
       <List.Item >
         <List.Item.Meta    
           defaultSelectedKeys={[router.pathname]}            
-          title={<a onClick={ () => router.push("/Table")} key="/Table">{item.title}</a>}
+          title={<a onClick={ () => router.push("/Table/show")} key="/Table/show">{item.title}</a>}
           description={item.description}
           
         />
