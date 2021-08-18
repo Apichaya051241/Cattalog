@@ -76,14 +76,14 @@ export default function Home() {
       onSearch={onSearch}
     />
 
-<List
-    size="large" 
+<List 
+    size="default" 
+    position=""
     itemLayout="horizontal"
     dataSource={data}
     renderItem={item => (
-      <List.Item>
-        <List.Item.Meta
-          
+      <List.Item >
+        <List.Item.Meta                
           title={<a href="https://ant.design">{item.title}</a>}
           description={item.description}
           
