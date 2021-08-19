@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Table } from 'antd';
+import { Button } from 'antd';
+import { useRouter } from 'next/router';
 
 
   
 
 
 const Show =() => {
+  const router=useRouter();  
     const columns = [
         {
           title: 'Sku',
@@ -51,13 +54,15 @@ const Show =() => {
       ];
     
      
-    return (
-      
-     <h1>TABLE</h1>,
-     <div>
+    return (      
+    <div>
+      <Button  defaultSelectedKeys={[router.pathname]} onClick={ () => router.push("/")} key="/"  >Home</Button>
+      <p></p>
     <h4>ALL DATA</h4>
     <p></p>
-    <Table columns={columns} dataSource={data} size="middle" />    
+    <Table columns={columns} dataSource={data} size="middle" /> 
+    <p></p>    
+    
   </div>
    
     )

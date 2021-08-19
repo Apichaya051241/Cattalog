@@ -1,22 +1,13 @@
-import { Input, Space } from 'antd';
-import styles from '../styles/Home.module.css'
-
-
   
+import { Input, Space } from 'antd';
+
  
 const SearchComponent = ({  }) => {
-    const { Search } = Input; 
-    const onSearch = value => console.log(value);
+  const { Search } = Input;
+  const onSearch = value => console.log(value);
     
   return (
-    <Search  className={styles}
-    placeholder="input sku"
-    allowClear      
-    enterButton="Search"    
-    size='large'
-    color='#8c8c8c'
-    onSearch={onSearch}
-  />
+    <Search placeholder="Search Sku..." onSearch={onSearch} style={{ width: 450 }  } size='large'  />
   );
 };
 
