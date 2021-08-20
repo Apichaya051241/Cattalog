@@ -4,11 +4,13 @@ import { Button } from 'antd';
 import { useRouter } from 'next/router';
 
 
+
   
 
 
 const Show =() => {
   const router=useRouter();  
+  const { titlename } = router.query
     const columns = [
         {
           title: 'Sku',
@@ -42,7 +44,7 @@ const Show =() => {
       const data = [
         {
           key: '1',
-          sku: '00000001',
+          sku: titlename,
           categorise: "ProPlugin/Microphones,ProPlugin/Microphones/USB,ProPlugin/YouTube-Podcast,ProPlugin/โปร/ไมโครโฟน",
           price: 3500,
           spacialprice: 2500,
@@ -55,12 +57,12 @@ const Show =() => {
     
      
     return (      
-    <div>
-      <Button  defaultSelectedKeys={[router.pathname]} onClick={ () => router.push("/")} key="/"  >Home</Button>
+    <div  > 
+      <Button  color='blue' shape='round' defaultSelectedKeys={[router.pathname]} onClick={ () => router.push("/")} key="/"   >Home</Button>
       <p></p>
-    <h4>ALL DATA</h4>
+      <h4 >All Data</h4>
     <p></p>
-    <Table columns={columns} dataSource={data} size="middle" /> 
+    <Table columns={columns} dataSource={data}  size="middle" center /> 
     <p></p>    
     
   </div>

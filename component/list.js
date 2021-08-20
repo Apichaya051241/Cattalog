@@ -1,6 +1,7 @@
 import { List, Avatar } from 'antd';
 import { useRouter } from 'next/router';
 
+
   
  
 const ListComponent = ({  }) => {
@@ -50,16 +51,17 @@ const ListComponent = ({  }) => {
       
     
   return (
-    <List 
-    size="default" 
-    position=""
+    <List
+    style={{ width: 1350,padding: "1rem" }  } 
+    size="large" 
+    
     itemLayout="horizontal"
     dataSource={data}
     renderItem={item => (
       <List.Item >
         <List.Item.Meta    
           defaultSelectedKeys={[router.pathname]}            
-          title={<a onClick={ () => router.push("/Table/show")} key="/Table/show">{item.title}</a>}
+          title={<a onClick={ () => router.push('/Table/show/'+item.title)} key="/Table/show">{item.title}</a>}
           description={item.description}
           
         />
