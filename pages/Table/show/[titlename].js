@@ -40,7 +40,7 @@ const Show =() => {
             title: 'Color',
             dataIndex: 'color',
           },
-          {
+        {
             title: 'Action',
             key: 'operation',
             fixed: 'right',
