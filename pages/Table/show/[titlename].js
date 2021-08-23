@@ -40,6 +40,13 @@ const Show =() => {
             title: 'Color',
             dataIndex: 'color',
           },
+          {
+            title: 'Action',
+            key: 'operation',
+            fixed: 'right',
+            width: 100,
+            render: () => <a>Edit</a>,
+          },
       ];
       const data = [
         {
