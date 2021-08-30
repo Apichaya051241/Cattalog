@@ -52,7 +52,7 @@ const ListComponent = ({  }) => {
     
   return (
     <List
-    style={{ width: 1350,padding: "1rem" }  } 
+    style={{ width: 1350,padding: "0.7rem" }  } 
     size="large" 
     
     itemLayout="horizontal"
@@ -61,9 +61,8 @@ const ListComponent = ({  }) => {
       <List.Item >
         <List.Item.Meta    
           defaultSelectedKeys={[router.pathname]}            
-          title={<a onClick={ () => router.push('/Table/show/'+item.title)} key="/Table/show">{item.title}</a>}
+          title={<a onClick={() => router.push('/Table/show/' + item.title)} key="/Table/show">{item.title}</a>}
           description={item.description}
-          
         />
       </List.Item>
     )}

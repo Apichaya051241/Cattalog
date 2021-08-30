@@ -8,12 +8,12 @@ import { Image } from 'antd';
 const HeadComponent = ({  }) => {
     
   return (
-    <Head >
-        <Image
-      width={1540}
-      height={250}
-      src="https://lh3.googleusercontent.com/wU0rkUyQ58KfTaQsiFD25gZhvYDiIMCtLPaFlkaCyFrUmDy92EFryNA4QcGQv0dJEhGY6ujO7pp6eCuFCpG_DP8iTG7ielaxnWKIN_FKzElZ6JCRESNlpeuv7sZaKgEnBeXeFELR-uddpPhdI7IuG3FDL6dE7O7SZsU_G5U6qFAkUX7fFf_lkIXQG7YNfb81LVIVIuLzS6lbpR5HnopISkNs_CMaIvcCaJzyAnCW_QaHYGjN4QUJXIwytaD_qGfLTdNQf_AMK3yAGgQZawAKZzqTduIH3r1263dfx5DnyoOtJRUDpQQvXUrMbgUdN-TQs6EE22mYrAg4Z9kPrnIXx8mg-6TDlJeJz1_--ZjbS_mEzt0i_TJm8DQ9syOF6wiW_nRzJnQj3yHGZftEJpvGQd_E6K1Hh3TVRcygkjSwIt0c_1qoJZnD8D2RdebAr77YoDyAdNc7BUF_nbtvQe_kgryuGNIfcc2ZNBijT4ArE5xESvuG4e4bB7YvZkivBjiss0_rg6ZW4cjc7eTWIVh8SIHx1hEgnSvEN2hlrj_1ga6yTKMzIoXH2GOSTsvNWE9pKw6ZW6rCYzsB-MUKt-oK8vpF2eNdeuMZ8K4YHfO2ZYk0xmkvTFdQ7uQs5hNX5jrFXSCZ8yUKORxWcdG40X9wppj_3EY0X8Qz74sbA_YhI0tILCa75ess-lH_vhTh-lalhmgZtCklfUifmZTJqoEI4Jg=w1640-h502-no?authuser=0"
-    />
+    <Head>
+      <Image
+        width={1540}
+        height={250}
+        src="https://lh3.googleusercontent.com/gMe7sy7ZHFhvs_4fIaxyqC08RApo3jfJQ2B2npT1SdUspVdK3lcyWFJDy13tv4SqBtKPX56LO1x93DQ6tv4diudvr1EEyyJnkOvHC-pFFbrPzkTYXqMco4Plu-dC4AX4qp5l3kdD2WRGTRh6LbMHB64xzPoERUzBYwxDQ4lBH_--TkALZMlQOotIxg2e8ltPVGXZ28hkPopu81GJvfKd3mJnGDW_aM2fIvvtwaA7yvfKfZhU41GdlhzYMpuu0j7LVKZ1dNSJgPqeiGuaYSHX6ur4C-tC9PdLXHtqjqZ0eae5tVeLba4RLYtd17VwejS_WY28GubqB-sJ5S_uibjG52w4uXrFF5s-BAc0a6n9404B-SIzhjuBR9xr-ntkKDCbUyxcMmFde-3o--wGQMaHjFWHcBvtp8BGOMOlA88X9UdKgeDGDiJFxtwoSlaUPcqcCvWybnijd4XSJ25zPnJmcvE7x9nr2Adjkwl5DCrErlNBRPLVtkIZLqYDoBZabotRDXNXdkCm6BOGOmVqgrpkzv3Dbu1iQHc4WilVFpdjJmJfiMNb6OB4DxwxfKdiAtuSz495D6TL6F3PysAX6JmPIuBkjiLWxy_io_lvzri1WLc6sGAIAbl5VCd6H_rLeQdTOj8NTmcuEva_5XTBkjzwSTgjwCisnE9owd7WvjqvcJjx9KPVT5gOm7f2f5d7_8k6Z7mRrQpvqUbqKPgcJReKLMY=w1640-h502-no?authuser=0"
+      />
     </Head>
   );
 };
