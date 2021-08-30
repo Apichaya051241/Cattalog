@@ -1,13 +1,21 @@
   
-import { Input, Space } from 'antd';
+import { Input } from 'antd';
+
 
 const SearchComponent = ({  }) => {
+
  
   const { Search } = Input;
   const onSearch = value => console.log(value);
-    
+  
   return (
-    <Search  placeholder="Search Sku..." onSearch={onSearch} style={{ width: 550, height: 50, position:'unset',padding: "2rem",float: "center"  } }  size='large'   />
+    <div>
+    <Search  placeholder="Search Sku..."  
+    onSearch={onSearch} 
+    style={{ width: 550, height: 45, position:'center', padding: '0 30px' } }  
+    size='large'  />
+    </div>
+    
   );
 };
 
