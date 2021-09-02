@@ -4,17 +4,15 @@ import { Button } from "antd";
 import { useRouter } from "next/router";
 import DrawerComponent from "../../../component/drawer";
 
-const Show = () => {
+const Show = (newList) => {
   const [visible, setVisible] = useState(false);
   const showDrawer = () => {
     setVisible(true);
-    
   };
 
   const router = useRouter();
 
   const { titlename } = router.query;
-  
 
   const columns = [
     {
@@ -57,13 +55,13 @@ const Show = () => {
       ),
     },
   ];
+
   const data = [
     {
       key: "1",
       sku: titlename,
-      categorise:
-        "ProPlugin/Microphones,ProPlugin/Microphones/USB,ProPlugin/YouTube-Podcast,ProPlugin/โปร/ไมโครโฟน",
-      price: 3500,
+      categorise: "categorise55555",
+      price: 3000,
       spacialprice: 2500,
       description:
         "<li>ไมโครโฟน USB มี A/D Converter ในตัว</li><li>รองรับการบันทึกเสียงระดับ Hi-res</li> <li>สามารถใช้งานได้กับคอมพิวเตอร์ทั้ง 2 ระบบและ iPad</li> <li>มี Shock mount Built-in ในตัว</li>",
@@ -72,6 +70,7 @@ const Show = () => {
     },
   ];
 
+  
   return (
     <div>
       <Button
@@ -80,8 +79,7 @@ const Show = () => {
         defaultSelectedKeys={[router.pathname]}
         onClick={() => router.push("/")}
         key="/"
-        padding="1rm"
-      >
+        padding="1rm"      >
         Home
       </Button>
 
@@ -89,13 +87,19 @@ const Show = () => {
       <h4>All Data</h4>
       <p></p>
       <Table
-        style={{ position: "center", paddingLeft: "2rm", paddingRight: "2rm" }}
+        style={{ position: "topCenter" }}
         columns={columns}
         dataSource={data}
-        size="large"
+        size={"large"}
       />
       <p></p>
-      <DrawerComponent visible={visible} setVisible={setVisible} titlename={titlename}  />
+      <DrawerComponent
+        visible={visible}
+        setVisible={setVisible}
+        titlename={titlename}
+        data={data}        
+        newList={newList}
+      />
       <></>
     </div>
   );
