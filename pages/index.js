@@ -3,8 +3,9 @@ import { Content } from 'antd/lib/layout/layout';
 import SearchComponent from '../component/search';
 import ListComponent from '../component/list';
 import HeadComponent from '../component/header';
-import UploadComponent from '../component/upload';
+// import UploadComponent from '../component/upload';
 import { Row } from 'antd';
+
 
 export default function Home() {
   return (
@@ -12,13 +13,13 @@ export default function Home() {
       <HeadComponent/>    
       <Content hasSider >
         <Row>          
-            <SearchComponent/>        
-            <UploadComponent/> 
+          <SearchComponent />          
+          {/* <UploadComponent/>  */}
         </Row>  
         <Content  > 
            <ListComponent/>
            </Content>  
-        </Content>        
+      </Content>      
     </div>
   )
 }

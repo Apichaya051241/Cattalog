@@ -11,8 +11,9 @@ const HeadComponent = ({  }) => {
     <Head>
       <Image
         width={1540}
-        height={250}
-        src="https://lh3.googleusercontent.com/gMe7sy7ZHFhvs_4fIaxyqC08RApo3jfJQ2B2npT1SdUspVdK3lcyWFJDy13tv4SqBtKPX56LO1x93DQ6tv4diudvr1EEyyJnkOvHC-pFFbrPzkTYXqMco4Plu-dC4AX4qp5l3kdD2WRGTRh6LbMHB64xzPoERUzBYwxDQ4lBH_--TkALZMlQOotIxg2e8ltPVGXZ28hkPopu81GJvfKd3mJnGDW_aM2fIvvtwaA7yvfKfZhU41GdlhzYMpuu0j7LVKZ1dNSJgPqeiGuaYSHX6ur4C-tC9PdLXHtqjqZ0eae5tVeLba4RLYtd17VwejS_WY28GubqB-sJ5S_uibjG52w4uXrFF5s-BAc0a6n9404B-SIzhjuBR9xr-ntkKDCbUyxcMmFde-3o--wGQMaHjFWHcBvtp8BGOMOlA88X9UdKgeDGDiJFxtwoSlaUPcqcCvWybnijd4XSJ25zPnJmcvE7x9nr2Adjkwl5DCrErlNBRPLVtkIZLqYDoBZabotRDXNXdkCm6BOGOmVqgrpkzv3Dbu1iQHc4WilVFpdjJmJfiMNb6OB4DxwxfKdiAtuSz495D6TL6F3PysAX6JmPIuBkjiLWxy_io_lvzri1WLc6sGAIAbl5VCd6H_rLeQdTOj8NTmcuEva_5XTBkjzwSTgjwCisnE9owd7WvjqvcJjx9KPVT5gOm7f2f5d7_8k6Z7mRrQpvqUbqKPgcJReKLMY=w1640-h502-no?authuser=0"
+        height={300}
+        preview={false}        
+        src="https://lh3.googleusercontent.com/0D2jxzN6hJTVOBzhn7W-TBNJhbuN2SmPxMVmbNRJ7za7plI1wy6TTeBJDmz_w_n2hEM3gSfUa5gPb9Ui4PDVT6jeuw5BVtpyVutu6lnb2ymrEn253xAwoPAyPxG0Dw0TJ-lTyAl2d9T-zs_Y-mm--j4bzvdi4w8m8aUZj43apFTv-bVVLKByQZAOplT42O7RyDdsnw7IXyrtfCEc1CPzH76jpEVzdrXUbckU03SN-y12ok4DMwRczWCfJDLMs8MXgEtguk4S5cOqMqxA2geHf5bspUS0kNSDDwmYuFgmNkGpQZpkBGp_8fKs3-CAu7NCi80hjh4Tn0IjiJtIsL4SOk2B5jwun_zQrESjPKKzCFjMiJpcHU1V9e0_DKeOW3g295iNNHgP9wy_WP0FtH_DLvAdjxEyo2WFgvEH6zFvcsWIr94D_4w401N2oPISa0mWjcH3EO9xxHoJM1nZB0G_HX3zgalI6aET6c5ohoybWmV7Cp12ulxgSniJiag-RpiA3xWM4bvoxme-bx-DlzQmzRomp6LLKLtM0gOpT-y5hd3mjmJnQVhu9Fux3kxZZ2j5ofi9ImBiYm1xVz1A_5k78RwmCbSart0Z1E05zxb4YmYeiPC1WPuUgsXns2KuWdo_0ytblNT5FLRKGLZwBj6wjjtN7Pozi9iWEH-kiJvM0vwaFI4Oj6WIBwIPKvgR48H5hHU40L8Z64v66vTej4Rl6vo=w1640-h502-no?authuser=0"
       />
     </Head>
   );

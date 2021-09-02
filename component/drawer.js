@@ -1,18 +1,24 @@
 import React, { useState } from "react";
 import { Drawer } from "antd";
 import { Form, Input, InputNumber, Button } from "antd";
-import InputComponent from "./input";
 
-const DrawerComponent = ({ visible, setVisible, titlename }) => {
+const DrawerComponent = ({ visible, setVisible, titlename, data }) => {
+  const [list, setList] = useState([]);
+  const [input, setInput] = useState("");
+
   const layout = {
     labelCol: { span: 8 },
     wrapperCol: { span: 16 },
   };
 
-  const updateList = async (titlename) => {
+  const addList = (data) => {
+    setList([...list, data]);
+  };
+
+  const updateList = async (data) => {
     const newList = await list.map((item) => {
       let newtitlename = "";
-      if (item === titlename) {
+      if (item === data) {
         newtitlename = data;
       } else {
         newtitlename = item;
@@ -29,48 +35,101 @@ const DrawerComponent = ({ visible, setVisible, titlename }) => {
 
   return (
     <Drawer
-      title="Edit data"
+      title="Edit Data"
       placement="right"
       closable={false}
       onClose={onClose}
       visible={visible}
       width="600"
     >
-      <Form.Item name={["user", "titlename"]} label="Sku">
-        <Input placeholder={titlename} />
+      <Form.Item name={["product", "titlename"]} label="Sku">
+        <Input
+          placeholder={titlename}
+          onChange={(e) => {
+            console.log(e.target.value);
+            setInput(e.target.value);
+          }}
+          value={input}
+        />
       </Form.Item>
 
-      <Form.Item name={["user", "catagorise"]} label="Catagorise">
-        <Input.TextArea />
+      <Form.Item name={["product", "catagorise"]} label="Catagorise">
+        <Input.TextArea
+          placeholder={data}
+          onChange={(e) => {
+            console.log(e.target.value);
+            setInput(e.target.value);
+          }}
+          value={input}
+        />
       </Form.Item>
 
-      <Form.Item name={["user", "price"]} label="Price">
-        <InputNumber />
+      <Form.Item name={["product", "price"]} label="Price">
+        <InputNumber
+          placeholder={data}
+          onChange={(e) => {
+            console.log(e.target.value);
+            setInput(e.target.value);
+          }}
+          value={input}
+        />
       </Form.Item>
 
-      <Form.Item name={["user", "spacialprice"]} label="Spacialprice">
-        <InputNumber />
+      <Form.Item name={["product", "spacialprice"]} label="Spacialprice">
+        <InputNumber
+          placeholder={data}
+          onChange={(e) => {
+            console.log(e.target.value);
+            setInput(e.target.value);
+          }}
+          value={input}
+        />
       </Form.Item>
 
-      <Form.Item name={["user", "description"]} label="Description">
-        <Input.TextArea />
+      <Form.Item name={["product", "description"]} label="Description">
+        <Input.TextArea
+          placeholder={data}
+          onChange={(e) => {
+            console.log(e.target.value);
+            setInput(e.target.value);
+          }}
+          value={input}
+        />
       </Form.Item>
 
-      <Form.Item name={["user", "brand"]} label="Brand">
-        <Input />
+      <Form.Item name={["product", "brand"]} label="Brand">
+        <Input
+          placeholder={data}
+          onChange={(e) => {
+            console.log(e.target.value);
+            setInput(e.target.value);
+          }}
+          value={input}
+        />
       </Form.Item>
 
-      <Form.Item name={["user", "color"]} label="Color">
-        <Input />
+      <Form.Item name={["product", "color"]} label="Color">
+        <Input
+          placeholder={data}
+          onChange={(e) => {
+            console.log(e.target.value);
+            setInput(e.target.value);
+          }}
+          value={input}
+        />
       </Form.Item>
 
-      <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }} >
-        <Button 
+      <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
+        <Button
           htmlType="edit"
-          shape="round"        
+          shape="round"
+          large
+          onClick={() => {
+            updateList(input);
+          }}
         >
           Submit
-        </Button>        
+        </Button>
       </Form.Item>
     </Drawer>
   );
