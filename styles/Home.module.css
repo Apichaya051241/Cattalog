@@ -116,11 +116,19 @@
 
 .search{
   color: #8c8c8c;
+  shape-margin: "round";
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+.table{  
+  max-width: 80;
+  margin: 20px auto;
+  padding: 15px ;
+ 
   }
 }

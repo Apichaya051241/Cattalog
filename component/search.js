@@ -1,5 +1,6 @@
   
 import { Input } from 'antd';
+import { styles } from 'ansi-colors';
 
 
 const SearchComponent = ({  }) => {
@@ -10,7 +11,8 @@ const SearchComponent = ({  }) => {
   
   return (
     <div>
-    <Search  placeholder="Search Sku..."  
+      <Search className={styles.Search}
+    placeholder="Search Sku..."
     onSearch={onSearch} 
     style={{ width: 550, height: 45, position:'center', padding: '0 30px' } }  
     size='large'  />
